@@ -1,0 +1,514 @@
+@charset "UTF-8";
+
+#wrap {
+  width: 100%;
+  height: 900px;
+}
+
+#wrap #header {
+  z-index: 3;
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background: rgb(207, 201, 201);
+}
+#wrap #header .content {
+  width: 1200px;
+  height: 100%;
+  background: #9d9;
+  margin: 0 auto;
+  position: relative;
+}
+
+#wrap #header .content .box {
+  width: 100%;
+  height: 100%;
+}
+#wrap #header .content .box .left-box {
+  float: left;
+  width: 200px;
+  height: 100%;
+  background: #ffc;
+}
+#wrap #header .content .box .right-box {
+  float: left;
+  width: 1000px;
+  height: 100%;
+  background: #fff;
+}
+
+#wrap #header .content .box .right-box #nav {
+  width: 100%;
+  text-align: right;
+}
+#wrap #header .content .box .right-box #nav > ul {
+  display: inline-block;
+  margin: 50px 12px 0 0;
+}
+#wrap #header .content .box .right-box #nav > ul > li {
+  float: left;
+  width: 180px;
+  background: #fd3;
+}
+#wrap #header .content .box .right-box #nav > ul > li > a {
+  display: block;
+  line-height: 50px;
+  font-size: 15px;
+  color: #444;
+  text-align: center;
+}
+#wrap #header .content .box .right-box #nav > ul > li > a:hover {
+  background: #fff;
+  color: #fd3;
+}
+
+#wrap #header .content .box .right-box #nav > ul > li .sub {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+#wrap #header .content .box .right-box #nav > ul > li .sub ul {
+  width: 100%;
+}
+#wrap #header .content .box .right-box #nav > ul > li .sub ul li {
+  width: 100%;
+}
+#wrap #header .content .box .right-box #nav > ul > li .sub ul li a {
+  display: block;
+  text-align: center;
+  line-height: 45px;
+  display: none;
+}
+#wrap #header .content .box .right-box #nav:hover > ul > li .sub ul li a {
+  display: block;
+}
+
+#wrap #header .content .box .right-box #nav > ul > li .sub ul li a:hover {
+  background: #999;
+  color: #fd3;
+}
+
+#wrap #header .content .box .right-box #nav > ul > li .sub-bg {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 180px;
+  z-index: 1;
+  background: #fd3;
+  display: none;
+}
+
+#wrap #header .content .box .right-box #nav:hover > ul > li .sub-bg {
+  display: block;
+}
+
+#wrap #main {
+  z-index: 2;
+  position: relative;
+  width: 1200px;
+  height: 700px;
+  background: #9c9;
+  margin: 0 auto;
+}
+#wrap #main #section1 {
+  width: 100%;
+  height: 400px;
+}
+#wrap #main #section1 .slide-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: #fff;
+}
+#wrap #main #section1 .slide-container .slide-view {
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+#wrap #main #section1 .slide-container .slide-view .slide-wrap {
+  position: relative;
+  left: 0;
+  width: 4800px;
+  height: 400px;
+  transition: all 0.6s ease-in;
+}
+#wrap #main #section1 .slide-container .slide-view .slide-wrap .slide {
+  float: left;
+  width: 1200px;
+  height: 400px;
+}
+#wrap #main #section1 .slide-container .slide-view .slide-wrap .slide0 {
+  width: 1200px;
+  height: 400px;
+  background: url(../img/subway.jpg) no-repeat 50% 50%;
+  background-size: 90%;
+}
+#wrap #main #section1 .slide-container .slide-view .slide-wrap .slide1 {
+  width: 1200px;
+  height: 400px;
+  background: url(../img/matthew-daniels-iPEr-x6mPEQ-unsplash.jpg) no-repeat 50%
+    50%;
+  background-size: 90%;
+}
+#wrap #main #section1 .slide-container .slide-view .slide-wrap .slide2 {
+  width: 1200px;
+  height: 400px;
+  background: url(../img/matteo-catanese-Wh8lh2QZ-Zs-unsplash.jpg) no-repeat 50%
+    50%;
+  background-size: 90%;
+}
+#wrap #main #section1 .slide-container .slide-view .slide-wrap .slide3 {
+  width: 1200px;
+  height: 400px;
+  background: url(../img/nyc.jpg) no-repeat 50% 50%;
+  background-size: 90%;
+}
+
+#wrap #main #section1 .slide-container .next-btn-wrap {
+  position: absolute;
+  right: 20px;
+  top: 200px;
+
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  border-top: 1px solid #777;
+  border-right: 1px solid #777;
+  transform: rotate(45deg);
+}
+#wrap #main #section1 .slide-container .next-btn-wrap a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#wrap #main #section1 .slide-container .prev-btn-wrap {
+  position: absolute;
+  left: 20px;
+  top: 200px;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  border-top: 1px solid #777;
+  border-right: 1px solid #777;
+  transform: rotate(-135deg);
+}
+#wrap #main #section1 .slide-container .prev-btn-wrap a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#wrap #main #section2 {
+  width: 100%;
+  height: 300px;
+}
+#wrap #main #section2 .box {
+  width: 100%;
+  height: 100%;
+}
+
+#wrap #main #section2 .box .left-box {
+  position: relative;
+  float: left;
+  width: 400px;
+  height: 100%;
+}
+#wrap #main #section2 .box .left-box .img-box {
+  width: 100%;
+  height: 300px;
+  background: #fff;
+}
+
+#wrap #main #section2 .box .left-box .img-box .img-view {
+  width: 100%;
+  height: 300px;
+
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+}
+#wrap #main #section2 .box .left-box .img-box .img-view .slide-wrap {
+  position: relative;
+  left: 0;
+  width: 1600px;
+  height: 200px;
+  transition: all 0.6s ease-in;
+}
+
+#wrap #main #section2 .box .left-box .img-box .img-view .slide-wrap .img {
+  float: left;
+  width: 400px;
+  height: 300px;
+}
+#wrap #main #section2 .box .left-box .img-box .img-view .slide-wrap .img1 {
+  width: 400px;
+  height: 300px;
+  background: url(../img/bk3.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+#wrap #main #section2 .box .left-box .img-box .img-view .slide-wrap .img2 {
+  width: 400px;
+  height: 300px;
+  background: url(../img/bk2.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+#wrap #main #section2 .box .left-box .img-box .img-view .slide-wrap .img3 {
+  width: 400px;
+  height: 300px;
+  background: url(../img/bk1.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+#wrap #main #section2 .box .left-box .img-box .img-view .slide-wrap .img4 {
+  width: 400px;
+  height: 300px;
+  background: url(../img/bk4.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+#wrap #main #section2 .box .left-box .img-box .next-btn-wrap {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 10px;
+  top: 150px;
+  z-index: 2;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+}
+#wrap #main #section2 .box .left-box .img-box .next-btn-wrap a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#wrap #main #section2 .box .left-box .img-box .prev-btn-wrap {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 10px;
+  top: 150px;
+  z-index: 2;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(-135deg);
+}
+#wrap #main #section2 .box .left-box .img-box .prev-btn-wrap a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#wrap #main #section2 .box .center-box {
+  float: left;
+  width: 400px;
+  height: 100%;
+  background: #fff;
+}
+
+#wrap #main #section2 .box .center-box .img-box {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+#wrap #main #section2 .box .center-box .img-box .img-view {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+#wrap #main #section2 .box .center-box .img-box .img-view .slide-wrap {
+  width: 400px;
+  height: 900px;
+  position: relative;
+  top: 0;
+  transition: all 0.6s ease-in;
+}
+#wrap #main #section2 .box .center-box .img-box .img-view .slide-wrap .img {
+  width: 400px;
+  height: 300px;
+}
+#wrap #main #section2 .box .center-box .img-box .img-view .slide-wrap .img1 {
+  width: 400px;
+  height: 300px;
+  background: url(../img/central1.jpg) no-repeat 50% 50%;
+  background-size: 90%;
+}
+#wrap #main #section2 .box .center-box .img-box .img-view .slide-wrap .img2 {
+  width: 400px;
+  height: 300px;
+  background: url(../img/central2.jpg) no-repeat 50% 50%;
+  background-size: 90%;
+}
+#wrap #main #section2 .box .center-box .img-box .img-view .slide-wrap .img3 {
+  width: 400px;
+  height: 300px;
+  background: url(../img/central\ park.jpg) no-repeat 50% 50%;
+  background-size: 90%;
+}
+
+#wrap #main #section2 .box .center-box .img-box .next-slide-btn {
+  width: 20px;
+  height: 20px;
+  border-top: 1px solid #444;
+  border-right: 1px solid #444;
+  transform: rotate(-45deg);
+  position: absolute;
+  left: 200px;
+  top: 10px;
+  z-index: 2;
+}
+#wrap #main #section2 .box .center-box .img-box .next-slide-btn a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#wrap #main #section2 .box .center-box .img-box .prev-slide-btn {
+  width: 20px;
+  height: 20px;
+  border-top: 1px solid #444;
+  border-right: 1px solid #444;
+  transform: rotate(135deg);
+  position: absolute;
+  left: 200px;
+  bottom: 10px;
+  z-index: 2;
+}
+#wrap #main #section2 .box .center-box .img-box .prev-slide-btn a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#wrap #main #section2 .box .right-box {
+  float: left;
+  width: 400px;
+  height: 100%;
+  background: #333;
+}
+
+#wrap #main #section2 .box .right-box .img-box {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+#wrap #main #section2 .box .right-box .img-box .img-view {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+#wrap #main #section2 .box .right-box .img-box .img-view .slide-wrap {
+  width: 1600px;
+  height: 300px;
+  position: relative;
+  right: 0;
+  transition: all 0.5s ease-in;
+}
+#wrap #main #section2 .box .right-box .img-box .img-view .slide-wrap .img {
+  float: left;
+  width: 400px;
+  height: 300px;
+}
+#wrap #main #section2 .box .right-box .img-box .img-view .slide-wrap .img1 {
+  width: 400px;
+  height: 300px;
+  background: url(../img/timesquare1.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+#wrap #main #section2 .box .right-box .img-box .img-view .slide-wrap .img2 {
+  width: 400px;
+  height: 300px;
+  background: url(../img/timesquare2.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+#wrap #main #section2 .box .right-box .img-box .img-view .slide-wrap .img3 {
+  width: 400px;
+  height: 300px;
+  background: url(../img/timesquare.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+#wrap #main #section2 .box .right-box .img-box .img-view .slide-wrap .img4 {
+  width: 400px;
+  height: 300px;
+  background: url(../img/ts3.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+#wrap #main #section2 .box .right-box .img-box .next-btn-wrap {
+  width: 20px;
+  height: 20px;
+  z-index: 2;
+  position: absolute;
+  right: 10px;
+  top: 150px;
+  border-top: 2px solid #333;
+  border-right: 2px solid #333;
+  transform: rotate(45deg);
+}
+#wrap #main #section2 .box .right-box .img-box .next-btn-wrap a {
+  display: block; height: 100%;
+  width: 100%;
+}
+#wrap #main #section2 .box .right-box .img-box .prev-btn-wrap {
+  width: 20px;
+  height: 20px;
+  z-index: 2;
+  position: absolute;
+  left: 10px;
+  top: 150px;
+  border-top: 2px solid #333;
+  border-left: 2px solid #333;
+  transform: rotate(-45deg);
+}
+#wrap #main #section2 .box .right-box .img-box .prev-btn-wrap a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+#wrap #footer {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background: rgb(207, 201, 201);
+}
+
+#wrap #footer .content {
+  width: 1200px;
+  height: 100%;
+  background: #ddd;
+  margin: 0 auto;
+}
+#wrap #footer .content .box {
+  width: 100%;
+  height: 100%;
+}
+#wrap #footer .content .box .left-box {
+  float: left;
+  width: 1000px;
+  height: 100%;
+}
+#wrap #footer .content .box .left-box .top {
+  width: 100%;
+  height: 50px;
+  background: rgb(165, 191, 229);
+}
+#wrap #footer .content .box .left-box .bottom {
+  width: 100%;
+  height: 50px;
+  background: rgb(238, 221, 135);
+}
+#wrap #footer .content .box .right-box {
+  float: left;
+  width: 200px;
+  height: 100%;
+  background: #ffc;
+}

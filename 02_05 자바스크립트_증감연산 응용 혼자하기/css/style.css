@@ -1,0 +1,67 @@
+#wrapper {width:100%;height:700px;background:#c9c;}
+
+#wrapper #header {z-index:3;position:relative;width:100%;height:100px;background:#cc9;}
+#wrapper #header .wrap {position:relative;width:1200px;height:100%;background:#9ce;margin:0 auto;}
+#wrapper #header .wrap .content {width:100%;height:100%;}
+#wrapper #header .wrap .content .left-box {float:left;width:200px;height:100%;background:#333;}
+
+#wrapper #header .wrap .content .right-box {float:left;width:1000px;height:100%;background:#e79;}
+
+
+/* 네비게이션 */
+
+#wrapper #header .wrap .content .right-box #nav{width:100%;text-align:right;}
+#wrapper #header .wrap .content .right-box #nav > ul{display:inline-block; margin:25px 25px 25px 0;}
+#wrapper #header .wrap .content .right-box #nav > ul > li {float:left;width:180px;}
+#wrapper #header .wrap .content .right-box #nav > ul > li > a{display:block;text-align:center;line-height: 50px;color:#f99;background:#333;font-size:16px;font-weight:500;}
+#wrapper #header .wrap .content .right-box #nav > ul > li > a:hover {background:#a88;color:#444;}
+
+/* 서브메뉴 */
+
+#wrapper #header .wrap .content .right-box #nav > ul > li .sub{z-index:2;position:relative;display:none;width:100%;}
+#wrapper #header .wrap .content .right-box #nav:hover > ul > li .sub{display:block;}
+#wrapper #header .wrap .content .right-box #nav > ul > li .sub ul{width:100%;}
+#wrapper #header .wrap .content .right-box #nav > ul > li .sub ul li{text-align: center;border-top:1px solid grey;}
+#wrapper #header .wrap .content .right-box #nav > ul > li .sub ul li a{display:block;width:100%;line-height:43px;background:#333;color:#f99;font-size:15px;font-weight:400;}
+#wrapper #header .wrap .content .right-box #nav > ul > li .sub ul li a:hover {background:#a88;color:#444;text-decoration:underline;}
+
+/* 서브메뉴 배경  */
+#wrapper #header .wrap .content .right-box #nav > ul > li .sub-bg {display:none;z-index:1;position:absolute;top:75px;left:0;;width:100%;height:188px;background:#333;} 
+#wrapper #header .wrap .content .right-box #nav:hover > ul > li .sub-bg {display:block;} 
+
+
+
+#wrapper #main {z-index:2;position:relative;width:1200px;height:500px;background:#ed9;margin:0 auto;}
+#wrapper #main #section1 {width:100%;height:300px;background:#ede;}
+
+/* 슬라이드 */
+#wrapper #main #section1 .slide-container {position:relative;width:100%;height:300px;}
+#wrapper #main #section1 .slide-container .slide-view {z-index:1;position:relative;width:100%;height:300px;overflow:hidden;}
+#wrapper #main #section1 .slide-container .slide-view .slide-wrap {position:relative;left:0;width:4800px;height:300px;transition:all .6s ease-in;}
+#wrapper #main #section1 .slide-container .slide-view .slide-wrap .slide {float:left;width:1200px;height:300px;background:#333;}
+#wrapper #main #section1 .slide-container .slide-view .slide-wrap .slide0 {background:url(../img/bridge.jpg) no-repeat 50% 50%;background-size:cover;}
+#wrapper #main #section1 .slide-container .slide-view .slide-wrap .slide1 {background:url(../img/new-york.jpg) no-repeat 50% 50%;background-size:cover;}
+#wrapper #main #section1 .slide-container .slide-view .slide-wrap .slide2 {background:url(../img/newyork-4524482_1280.jpg) no-repeat 50% 50%;background-size:cover;}
+#wrapper #main #section1 .slide-container .slide-view .slide-wrap .slide3 {background:url(../img/the-statue-of-liberty.jpg) no-repeat 50% 50%;background-size:cover;}
+
+
+#wrapper #main #section1 .slide-container .next-btn-wrap {z-index:2;position:absolute;top:50%;margin-top:-25px;right:50px;width:50px;height:50px;border-top:1px solid #fff;border-right:1px solid #fff;transform:rotate(45deg);}
+#wrapper #main #section1 .slide-container .next-btn-wrap a {display:block;width:50px;height:50px;}
+
+#wrapper #main #section1 .slide-container .prev-btn-wrap {z-index:2;position:absolute;top:50%;margin-top:-25px;left:50px;width:50px;height:50px;border-top:1px solid #fff;border-right:1px solid #fff;transform:rotate(-135deg);}
+#wrapper #main #section1 .slide-container .prev-btn-wrap a {display:block;width:50px;height:50px;}
+
+
+#wrapper #main #section2 {width:100%;height:200px;}
+#wrapper #main #section2 .content {width:100%;height:100%;}
+#wrapper #main #section2 .content .left-box {float:left;width:400px;height:100%;background:#d99;}
+#wrapper #main #section2 .content .center-box {float:left;width:400px;height:100%;background:#e79;}
+#wrapper #main #section2 .content .right-box {float:left;width:400px;height:100%;background:#c9c;}
+
+#wrapper #footer {z-index:1;position:relative;width:100%;height:100px;}
+#wrapper #footer .wrap {width:1200px;height:100%;margin:0 auto;}
+#wrapper #footer .wrap .content{width:100%;height:100%;}
+#wrapper #footer .wrap .left-box {float:left;width:200px;height:100%;background:#333;}
+#wrapper #footer .wrap .right-box {float:left;width:1000px;height:100%;}
+#wrapper #footer .wrap .right-box .top-box {width:100%;height:50px;background:#e7e;}
+#wrapper #footer .wrap .right-box .bottom-box {width:100%;height:50px;background:#c9f;}
